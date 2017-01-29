@@ -62,7 +62,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         
         let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         
-//Error is occurring on line 65 and 67. Error "Use of unresolved identifier 'mapView' on both lines
+//Error is occurring with the 2 mapView lines below. Error "Use of unresolved identifier 'mapView' on both lines
+
         mapView.setCenter(center, zoomLevel: 15, animated: true)
         
         mapView.userTrackingMode = .follow
